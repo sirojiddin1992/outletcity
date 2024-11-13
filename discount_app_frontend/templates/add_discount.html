@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Discount</title>
+</head>
+<body>
+    <h2>Add Discount</h2>
+    <form action="{{ url_for('add_discount') }}" method="post">
+        <input type="text" name="name" placeholder="Shop Name" required>
+        <input type="text" name="description" placeholder="Description" required>
+        <input type="number" name="discount" placeholder="Discount Percentage" required>
+        <input type="text" name="location" placeholder="Location" required>
+        <button type="submit">Add Discount</button>
+    </form>
+</body>
+</html>
